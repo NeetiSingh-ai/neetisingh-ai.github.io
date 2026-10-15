@@ -1,0 +1,1015 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Neeti Singh Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Neeti Singh: SAP Business AI and agentic AI leader. 18+ years in enterprise transformation, 20+ AI tools built, 40+ certifications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap">
+<style>
+/* Layout: one 1120px column. Every product sits on its own saturated colour backdrop with an
+   app-window preview, like a screenshot on a slide; the rest of the page stays calm around them. */
+:root{
+  --bg:#F6F6F3; --surface:#FFFFFF; --ink:#16181F; --muted:#5F636E; --line:#E4E4DF; --soft:#F0F0EC; --green:#1E8A5A;
+  --coral:#FF5C3A; --sun:#FFB400; --teal:#00A88F; --cobalt:#2F5BEA; --magenta:#D6337F; --violet:#7448E0; --leaf:#3BA55C; --sky:#14A3E0;
+  --win:#FFFFFF; --win-ink:#1B1F33; --win-muted:#8A8FA6; --win-line:#ECEDF3; --win-soft:#F4F5FA;
+  --f-display:"Newsreader",Georgia,"Times New Roman",serif;
+  --f-body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --f-deva:"Tiro Devanagari Hindi","Noto Sans Devanagari",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F111A; --surface:#181B28; --ink:#ECEEF6; --muted:#A0A5BC; --line:#2A2E40; --soft:#1F2333;
+  --win:#1C2030; --win-ink:#E6E8F2; --win-muted:#8D92AA; --win-line:#2C3145; --win-soft:#242939; --green:#5CCB97; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F111A; --surface:#181B28; --ink:#ECEEF6; --muted:#A0A5BC; --line:#2A2E40; --soft:#1F2333;
+  --win:#1C2030; --win-ink:#E6E8F2; --win-muted:#8D92AA; --win-line:#2C3145; --win-soft:#242939; --green:#5CCB97; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;overflow-x:hidden;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1120px;margin:0 auto;padding-block:48px 40px;display:flex;flex-direction:column;gap:80px;position:relative}
+a{color:var(--cobalt);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--cobalt);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.1}
+p{margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* Hero */
+.glow{position:absolute;inset:-40px -10% auto;height:520px;z-index:-1;pointer-events:none;opacity:.55;filter:blur(60px);
+  background:radial-gradient(30% 45% at 12% 30%,color-mix(in srgb,var(--coral) 55%,transparent),transparent 70%),
+             radial-gradient(28% 40% at 48% 10%,color-mix(in srgb,var(--sun) 50%,transparent),transparent 70%),
+             radial-gradient(30% 45% at 85% 35%,color-mix(in srgb,var(--cobalt) 45%,transparent),transparent 70%),
+             radial-gradient(25% 35% at 65% 70%,color-mix(in srgb,var(--teal) 40%,transparent),transparent 70%)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:48px;align-items:start}
+.id{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.avatar{width:88px;height:88px;border-radius:50%;padding:4px;background:conic-gradient(var(--coral),var(--sun),var(--leaf),var(--teal),var(--cobalt),var(--violet),var(--magenta),var(--coral));flex:none}
+.avatar span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;background:var(--surface);font:800 30px var(--f-display);color:var(--ink)}
+.badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:12px;color:#0B6B4C;background:#D8F5E8;padding:4px 10px;border-radius:999px}
+.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:#12A06E}
+.hero h1{font-size:clamp(44px,7vw,80px);font-weight:800;letter-spacing:-.03em;margin-top:22px}
+.role{font-family:var(--f-display);font-weight:500;font-size:clamp(19px,2.5vw,25px);margin-top:10px;
+  background:linear-gradient(90deg,var(--coral),var(--magenta) 40%,var(--cobalt));-webkit-background-clip:text;background-clip:text;color:transparent}
+.thesis{font-size:18px;max-width:60ch;margin-top:20px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:22px;font-family:var(--f-mono);font-size:13px}
+.flow span{padding:5px 11px;border-radius:7px;color:#fff;font-weight:500}
+.flow span:nth-of-type(1){background:var(--coral)} .flow span:nth-of-type(2){background:var(--sun);color:#3A2700}
+.flow span:nth-of-type(3){background:var(--teal)} .flow span:nth-of-type(4){background:var(--cobalt)}
+.flow i{font-style:normal;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:22px}
+.tag{font-size:13px;padding:3px 11px;border-radius:999px;font-weight:500;border:1px solid var(--line);background:var(--surface)}
+.tag::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px;background:var(--c,var(--cobalt));vertical-align:1px}
+
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:16px;box-shadow:0 18px 40px -24px rgba(30,30,80,.35)}
+.contact h2{font-size:21px}
+.contact p{color:var(--muted);font-size:14px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.addr{font-family:var(--f-mono);font-size:13px;user-select:all;word-break:break-all}
+button.copy{font:500 12px var(--f-mono);border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:6px;padding:4px 9px;cursor:pointer}
+button.copy:hover{border-color:var(--cobalt);color:var(--cobalt)}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.links a{display:flex;align-items:center;gap:8px;padding:9px 10px;border-radius:10px;text-decoration:none;font-weight:600;font-size:14px;color:#fff}
+.links a.li{background:#0A66C2} .links a.nl{background:var(--coral)}
+.meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
+
+/* Numbers */
+.numbers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.numbers div{border-radius:16px;padding:20px;color:#fff;display:flex;flex-direction:column;gap:2px}
+.numbers div:nth-child(1){background:var(--coral)} .numbers div:nth-child(2){background:var(--cobalt)}
+.numbers div:nth-child(3){background:var(--teal)} .numbers div:nth-child(4){background:var(--violet)}
+.numbers b{font-family:var(--f-display);font-size:40px;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1.1}
+.numbers span{font-size:14px;opacity:.92}
+
+/* Sections */
+section{display:flex;flex-direction:column;gap:24px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px 24px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:40px}
+.sec-head .eyebrow{display:none}
+.sec-head h2{font-size:clamp(30px,4vw,42px);font-weight:600;letter-spacing:-.01em}
+.sec-head p{color:var(--muted);font-size:clamp(16px,1.8vw,20px)}
+
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .2s ease, box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 22px 40px -26px rgba(20,20,60,.45)}
+.info{padding:26px 28px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.card h3{font-family:var(--f-body);font-size:26px;font-weight:600;letter-spacing:-.01em}
+.sub{font-size:17px;color:var(--green);font-weight:500;margin-top:8px;line-height:1.35}
+.info p.body{font-size:16.5px;color:var(--muted);line-height:1.65}
+.info p.body b{color:var(--ink)}
+.status{flex:none;font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:5px;white-space:nowrap;font-weight:500}
+.s-live{color:#0B6B4C;background:#D8F5E8}
+.s-demo{color:#7A4A00;background:#FFEFC9}
+.s-award{color:#fff;background:var(--magenta)}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
+.stack span{font-family:var(--f-mono);font-size:12px;color:var(--muted);background:var(--soft);border-radius:5px;padding:2px 8px}
+
+/* Screenshot backdrop + app window */
+/* Full-bleed app screen, like a real screenshot: brand-coloured app bar, then the UI */
+.shot{position:relative;background:var(--win);aspect-ratio:16/10;overflow:hidden;display:flex;max-width:100%;border-bottom:1px solid var(--line)}
+.shot.fill{background:linear-gradient(135deg,var(--a),var(--b))}
+.win{flex:1;min-width:0;background:var(--win);color:var(--win-ink);display:flex;flex-direction:column;overflow:hidden;font-size:11px;line-height:1.35}
+.bar{display:flex;align-items:center;gap:8px;padding:9px 12px;background:linear-gradient(90deg,var(--a),var(--b));color:#fff;font-family:var(--f-body);font-weight:600;font-size:11px}
+.bar i{display:none}
+.bar em{font-style:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar::after{content:"";margin-left:auto;flex:none;width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,.35)}
+.scr{flex:1;padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-height:0;overflow:hidden}
+.h{font-weight:700;font-size:12px;font-family:var(--f-display)}
+.m{color:var(--win-muted);font-family:var(--f-mono);font-size:9.5px}
+.ln{height:6px;border-radius:3px;background:var(--win-soft)}
+.pill{display:inline-flex;align-items:center;gap:4px;padding:3px 7px;border-radius:6px;font-weight:600;font-size:10px;white-space:nowrap}
+.ok{background:#DDF6EA;color:#0B6B4C}.run{background:#FFF1CC;color:#7A4A00}.wait{background:var(--win-soft);color:var(--win-muted)}
+.ok::before{content:"✓"}.run::before{content:"●";animation:blink 1.2s infinite}
+@keyframes blink{50%{opacity:.25}}
+.prog{height:7px;border-radius:4px;background:var(--win-soft);overflow:hidden}
+.prog i{display:block;height:100%;background:linear-gradient(90deg,var(--a),var(--b))}
+.cols{display:grid;gap:8px;min-height:0}
+.bubble{padding:6px 8px;border-radius:9px;max-width:85%}
+.bubble.me{align-self:flex-end;background:var(--a);color:#fff}
+.bubble.ai{background:var(--win-soft)}
+.tbl{display:grid;grid-template-columns:auto 1fr auto;gap:4px 8px;align-items:center}
+.tbl .m{font-size:9px}
+svg text{font-family:var(--f-mono)}
+
+/* Also built */
+.also{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.also div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px;color:var(--muted);border-top:4px solid var(--c)}
+.also b{display:block;color:var(--ink);font-family:var(--f-display);font-size:16px;margin-bottom:2px}
+
+/* Writing */
+.post{display:grid;grid-template-columns:260px minmax(0,1fr);border-radius:20px;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
+.post .cover{background:linear-gradient(135deg,var(--coral),var(--sun));padding:26px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:20px;min-height:200px}
+.post .cover b{font:800 30px/1 var(--f-display)}
+.post .cover span{font-family:var(--f-mono);font-size:12px;opacity:.9}
+.post .txt{padding:24px;display:flex;flex-direction:column;gap:10px;justify-content:center}
+.post h3{font-size:24px}
+
+/* Ledger */
+.ledger{display:flex;flex-direction:column}
+.job{display:grid;grid-template-columns:180px minmax(0,1fr);gap:24px;padding:22px 0;border-bottom:1px solid var(--line);position:relative}
+.when{font-family:var(--f-mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;display:flex;align-items:flex-start;gap:10px}
+.when::before{content:"";flex:none;width:12px;height:12px;border-radius:50%;background:var(--c);margin-top:4px;box-shadow:0 0 0 4px color-mix(in srgb,var(--c) 20%,transparent)}
+.job h3{font-size:21px;font-weight:800}
+.job .title{font-size:15px;color:var(--c);font-weight:600;margin-top:3px}
+.job ul{margin:10px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:4px;font-size:15px}
+
+/* Certs / edu */
+.certs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.certs .box{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;border-top:5px solid var(--c)}
+.certs ul{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column}
+.certs li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px;display:flex;gap:10px}
+.certs li::before{content:"✓";color:var(--c);font-weight:700}
+.edu{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.edu div{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:4px}
+.edu .yr{font-family:var(--f-mono);font-size:12px;font-weight:600;color:var(--c)}
+.edu h3{font-size:17px}
+.edu p{font-size:13px;color:var(--muted)}
+
+/* CTA */
+.cta{border-radius:24px;padding:48px clamp(22px,5vw,56px);display:flex;flex-direction:column;gap:16px;color:#fff;
+  background:radial-gradient(60% 90% at 0% 0%,var(--coral),transparent 60%),radial-gradient(60% 90% at 100% 100%,var(--teal),transparent 60%),linear-gradient(120deg,var(--magenta),var(--cobalt))}
+.cta h2{font-size:clamp(32px,5vw,56px);font-weight:800;letter-spacing:-.02em}
+.cta p{max-width:58ch;font-size:17px}
+.cta .row a{color:#fff;font-weight:600}
+.cta .addr{color:#fff}
+.cta button.copy{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.45)}
+footer{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:32px}
+  .grid.three,.also{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .numbers,.edu{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .wrap{padding-block:28px;gap:60px}
+  .grid,.grid.three,.also,.certs{grid-template-columns:1fr}
+  .job{grid-template-columns:1fr;gap:6px}
+  .post{grid-template-columns:1fr}
+  .shot{padding:14px 14px 0}
+  .links{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.card,.card:hover{transition:none;transform:none}.run::before,.orbit-sat{animation:none!important}}
+.orbit-sat{transform-origin:110px 70px;animation:spin 9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Added: product links, tiles, cascade, writing covers */
+.try{font-weight:600;font-size:15px;text-decoration:none;color:var(--green);margin-top:auto}
+.try:hover{text-decoration:underline}
+.tile{border:1px solid var(--win-line);border-radius:6px;padding:6px;font-weight:600;font-size:10px;text-align:center}
+.tile.on{background:#CCFBF1;color:#0F766E;border-color:#5EEAD4}
+.cascade{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.cascade span{padding:4px 7px;border-radius:6px;background:#0F1E3C;color:#E8D08A;font-weight:600;font-size:10px}
+.cascade i{font-style:normal;font-size:10px;font-weight:700;width:18px;height:18px;border-radius:50%;display:grid;place-items:center}
+.cascade i.ok::before,.cascade i.wait::before{content:none}
+.sweep{transform-origin:50px 50px;animation:spin 4s linear infinite}
+.post{text-decoration:none;color:inherit;grid-template-columns:1fr}
+.post .cover b{font:600 28px/1.1 var(--f-display)}
+.post .txt p{color:var(--muted)}
+.also a{color:var(--green);font-weight:600}
+@media (prefers-reduced-motion:reduce){.sweep{animation:none}}
+
+/* Added: dark app screens, KPI boxes */
+.scr.dark{background:var(--d-bg);color:var(--d-ink)}
+.scr.dark .m{color:color-mix(in srgb,var(--d-ink) 60%,transparent)}
+.scr.dark .ln{background:var(--d-soft)}
+.scr.dark .bubble.ai{background:var(--d-soft)}
+.scr.dark .tile{border-color:var(--d-soft)}
+.scr.dark .tile.on{background:#14B8A6;color:#04201D;border-color:#14B8A6}
+.scr.cosmic{background:radial-gradient(60% 80% at 80% 10%,#3B1D7A,transparent 70%),radial-gradient(40% 60% at 10% 90%,#5B1F4F,transparent 70%),var(--d-bg)}
+.pill.dk{background:#162336;color:#8AABCC}
+.orb{width:14px;height:14px;border-radius:4px;flex:none;background:conic-gradient(from 220deg,#00B4FF,#7B61FF,#00E5B4,#FFB700,#00B4FF)}
+.kpi{border:1px solid var(--win-line);border-radius:6px;padding:5px 7px;display:flex;flex-direction:column;gap:1px;text-align:center}
+.kpi b{font-size:13px}
+
+.awards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.award{border-radius:18px;padding:22px 18px;color:#fff;background:linear-gradient(135deg,var(--a),var(--b));display:flex;flex-direction:column;gap:6px;min-width:0}
+.award .medal{font-size:30px;line-height:1}
+.award b{font:600 21px/1.15 var(--f-display)}
+.award span:last-child{font-size:14px;opacity:.92}
+@media (max-width:900px){.awards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.awards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div>
+      <div class="id">
+        <div class="avatar" aria-hidden="true"><span>NS</span></div>
+        <span class="badge">Open to senior AI transformation roles</span>
+      </div>
+      <h1>Neeti Singh</h1>
+      <p class="role">SAP Business AI &amp; Agentic AI Leader · Forward Deployed Engineer</p>
+      <p class="thesis">I turn SAP AI strategy into working software. Eighteen years in enterprise transformation, ten of them in SAP, and I still build the agents myself: 30+ AI tools that configure S/4HANA, write SAP Activate deliverables, test, fix defects and plan the workforce.</p>
+      <div class="flow" aria-label="How I work">
+        <span>CXO business case</span><i>→</i><span>process insight</span><i>→</i><span>agents built</span><i>→</i><span>live on S/4HANA</span>
+      </div>
+      <div class="tags">
+        <span class="tag" style="--c:var(--cobalt)">S/4HANA Public Cloud</span><span class="tag" style="--c:var(--violet)">Joule &amp; Joule Agents</span><span class="tag" style="--c:var(--coral)">Multi-agent systems</span><span class="tag" style="--c:var(--teal)">SAP BTP</span><span class="tag" style="--c:var(--sun)">SAP Signavio</span><span class="tag" style="--c:var(--magenta)">Celonis</span><span class="tag" style="--c:var(--leaf)">SuccessFactors</span><span class="tag" style="--c:var(--sky)">React · Python</span><span class="tag" style="--c:var(--coral)">Claude &amp; LLM APIs</span>
+      </div>
+    </div>
+
+    <aside class="contact" aria-label="Contact">
+      <h2>Get in touch</h2>
+      <p>Happy to talk about SAP Business AI programs, agentic delivery and the autonomous enterprise.</p>
+      <div class="row">
+        <span class="addr">neeti4mathur@gmail.com</span>
+        <button class="copy" type="button" data-copy="neeti4mathur@gmail.com" id="copy-1">Copy</button>
+      </div>
+      <div class="links">
+        <a class="li" href="https://linkedin.com/in/neeti-8454417b" target="_blank" rel="noopener">in&nbsp; LinkedIn</a>
+        <a class="nl" href="https://linkedin.com/in/neeti-8454417b" target="_blank" rel="noopener">✎&nbsp; Newsletter</a>
+      </div>
+      <div class="meta">
+        <span>Based</span><span>Delhi NCR, India</span>
+        <span>Speaks</span><span>English · French · Hindi</span>
+        <span>Résumé</span><span>On request</span>
+      </div>
+    </aside>
+  </header>
+
+  <div class="numbers" aria-label="At a glance">
+    <div><b>18+</b><span>years in enterprise transformation</span></div>
+    <div><b>30+</b><span>AI tools and agent platforms built</span></div>
+    <div><b>40+</b><span>certifications across SAP, AI and cloud</span></div>
+    <div><b>10,000+</b><span>new hires onboarded on a digital process</span></div>
+  </div>
+
+  <!-- FLAGSHIP -->
+  <section id="flagship">
+    <div class="sec-head">
+      <span class="eyebrow">Flagship products</span>
+      <h2>Flagship products</h2>
+      <p>SAP agent platforms I designed &amp; built</p>
+    </div>
+    <div class="grid three">
+
+      <article class="card">
+        <div class="shot" style="--a:var(--cobalt);--b:var(--violet)">
+          <div class="win"><div class="bar"><em>APEX ZERO · Mission control</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="h">Requirement → deployed config</span><span class="m">6 of 10 agents</span></div>
+              <div class="row" style="gap:4px"><span class="pill wait">R</span><span class="pill" style="background:#E3E8FD;color:#2341B8">I</span><span class="pill wait">C</span><span class="pill" style="background:#E3E8FD;color:#2341B8">E</span><span class="pill wait">F</span><span class="pill" style="background:#E3E8FD;color:#2341B8">W</span><span class="m">RICEFW scope</span></div>
+              <div class="cols" style="grid-template-columns:repeat(2,1fr);gap:5px">
+                <span class="pill ok">Requirement Analyst</span><span class="pill ok">Architecture Planner</span>
+                <span class="pill ok">FDD / TDD Designer</span><span class="pill ok">ABAP Cloud Engineer</span>
+                <span class="pill ok">BTP Orchestrator</span><span class="pill ok">Integration Designer</span>
+                <span class="pill run">CBC Configurator</span><span class="pill wait">Test Engineer</span>
+                <span class="pill wait">Auto Deployer</span><span class="pill wait">Validator</span>
+              </div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>APEX ZERO</h3><p class="sub">Autonomous SAP configuration, 10 agents</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Takes a business requirement in plain English and produces end-to-end configuration across S/4HANA Public Cloud, Central Business Configuration and BTP: ABAP Cloud, RAP and CDS code, CPI iFlows, CAP apps, CBC scoping, unit tests and deployment guides, with an option to push straight to connected systems.</p>
+          <div class="stack"><span>RAP · CDS</span><span>CBC APIs</span><span>Integration Suite</span><span>BTP</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#7E22CE;--b:#A100FF">
+          <div class="win"><div class="bar"><em>SAP DocEngine · Activate pipeline</em></div>
+            <div class="scr">
+              <span class="h">Workshop → Defect resolution · 12 agents</span>
+              <div class="cols" style="grid-template-columns:repeat(3,1fr);gap:5px">
+                <span class="pill ok">Workshop</span><span class="pill ok">BPH</span><span class="pill ok">FTS / BPD</span>
+                <span class="pill ok">User stories</span><span class="pill ok">Interfaces</span><span class="pill ok">Extensibility</span>
+                <span class="pill ok">Architecture</span><span class="pill run">Code</span><span class="pill wait">FDD</span>
+                <span class="pill wait">TDD</span><span class="pill wait">Tosca tests</span><span class="pill wait">Defects</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+                <div style="display:flex;flex-direction:column;gap:5px"><span class="m">FDD · Order to Cash</span><div class="ln"></div><div class="ln" style="width:85%"></div></div>
+                <div style="display:flex;flex-direction:column;gap:5px"><span class="m">US-114 · Credit check</span><div class="ln"></div><div class="ln" style="width:60%"></div></div>
+              </div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>SAP DocEngine</h3><p class="sub">SAP Activate documentation, 12 agents</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Turns fit-to-standard workshop notes into the whole delivery chain: process hierarchy, FTS and BPD, user stories, interface mapping, extensibility, architecture, code, FDD, TDD, Tosca test design and defect resolution.</p>
+          <div class="stack"><span>SAP Activate</span><span>Tosca</span><span>Word export</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#060B14;--b:#16304F">
+          <div class="win"><div class="bar"><span class="orb"></span><em>JouleStudio Ultra · J4C powered</em></div>
+            <div class="scr dark" style="--d-bg:#0C1522;--d-ink:#E8F2FF;--d-soft:#162336">
+              <div class="row" style="gap:4px"><span class="pill" style="background:#00B4FF;color:#04121F">J4C Chat</span><span class="pill dk">Error Lab</span><span class="pill dk">Concepts</span><span class="pill dk">Prompts</span><span class="pill dk">Forge</span></div>
+              <div class="bubble me" style="--a:#7B61FF">Why does MRP finish without errors but create no planned orders?</div>
+              <div class="bubble ai"><b>Diagnosis:</b> check the material's MRP type, its planning file entry and whether any requirements fall inside the planning horizon.</div>
+              <span class="m">18 expert prompts · 14 SAP modules</span>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>JouleStudio Ultra</h3><p class="sub">Companion for Joule for Consultants</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Five tools for senior S/4HANA consultants: a J4C chat simulator, an SAP error decoder, a concept explainer, 18 expert prompts across 14 modules, and a scenario forge that writes new J4C prompts. Started as JouleStudio Pro.</p>
+          <div class="stack"><span>Joule</span><span>FI · CO · MM · SD · PP</span><span>Prompt design</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:var(--magenta);--b:var(--coral)">
+          <div class="win"><div class="bar"><em>SAP AI Strategy Architect · v12</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="h">AI roadmap · Finance &amp; Procurement</span><span class="pill ok">PPTX ready</span></div>
+              <div class="cols" style="grid-template-columns:repeat(3,1fr)">
+                <div style="display:flex;flex-direction:column;gap:5px"><span class="m">NOW</span><span class="pill" style="background:#FDE3EE;color:#9A1F57">Joule invoice Q&amp;A</span><span class="pill" style="background:#FDE3EE;color:#9A1F57">Cash app ML</span></div>
+                <div style="display:flex;flex-direction:column;gap:5px"><span class="m">NEXT</span><span class="pill" style="background:#FFE6DE;color:#A2361A">Supplier agent</span><span class="pill" style="background:#FFE6DE;color:#A2361A">ISLM scenario</span></div>
+                <div style="display:flex;flex-direction:column;gap:5px"><span class="m">LATER</span><span class="pill wait">Autonomous close</span><span class="pill wait">Agent mesh</span></div>
+              </div>
+              <span class="m">Joule skills matched · ISLM scenarios · business case</span>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>SAP AI Strategy Architect</h3><p class="sub">From AI ambition to a board-ready roadmap</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Multi-screen strategy tool, refined over twelve versions. It matches ISLM scenarios, recommends Joule skills, sequences the roadmap and exports a PowerPoint for the steering committee.</p>
+          <div class="stack"><span>Joule</span><span>ISLM</span><span>PPTX export</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:var(--sun);--b:var(--coral)">
+          <div class="win"><div class="bar"><em>Workforce AI · Command centre</em></div>
+            <div class="scr">
+              <div class="cols" style="grid-template-columns:repeat(3,1fr);gap:4px">
+                <span class="pill ok">Business insight</span><span class="pill ok">Demand forecast</span><span class="pill ok">Gap analysis</span>
+                <span class="pill ok">Scenarios</span><span class="pill ok">Sourcing</span><span class="pill ok">Cost plan</span>
+                <span class="pill run">Synthesizer</span><span class="pill wait">Reflection</span><span class="pill wait">Reasoning</span>
+              </div>
+              <svg viewBox="0 0 240 70" width="100%" style="flex:1;min-height:0" aria-hidden="true">
+                <g fill="#FFB400"><rect x="10" y="20" width="22" height="42" rx="3"/><rect x="60" y="8" width="22" height="54" rx="3"/><rect x="110" y="32" width="22" height="30" rx="3"/><rect x="160" y="14" width="22" height="48" rx="3"/><rect x="210" y="38" width="22" height="24" rx="3"/></g>
+                <g fill="#FF5C3A"><rect x="34" y="36" width="16" height="26" rx="3"/><rect x="84" y="28" width="16" height="34" rx="3"/><rect x="134" y="44" width="16" height="18" rx="3"/><rect x="184" y="26" width="16" height="36" rx="3"/></g>
+                <line x1="4" y1="62" x2="236" y2="62" stroke="currentColor" stroke-opacity=".2"/>
+              </svg>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Workforce AI</h3><p class="sub">Workforce strategy, 9 agents</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Nine agents from business insight to reasoning, six expert strategy advisors, 14 charts and an ERP panel for SuccessFactors, S/4HANA, Oracle HCM and Workday. Prompts adapt to any industry, and a demo mode runs without an API call.</p>
+          <div class="stack"><span>9 agents</span><span>Recharts</span><span>HR analytics</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#4528B8;--b:#7C5CFC">
+          <div class="win"><div class="bar"><em>S/4HANA Testing Strategy Generator</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="h">Test strategy · 17 sections</span><span class="pill run">12 / 17 approved</span></div>
+              <div style="display:grid;grid-template-columns:auto 1fr;gap:5px 10px;align-items:center">
+                <span class="m">Unit test</span><div><div style="height:6px;width:30%;border-radius:3px;background:#5B3ED6"></div></div>
+                <span class="m">SIT 1</span><div><div style="height:6px;width:32%;margin-left:22%;border-radius:3px;background:#1D6FD4"></div></div>
+                <span class="m">SIT 2</span><div><div style="height:6px;width:28%;margin-left:46%;border-radius:3px;background:#0E9E6E"></div></div>
+                <span class="m">UAT</span><div><div style="height:6px;width:26%;margin-left:62%;border-radius:3px;background:#C47B0A"></div></div>
+                <span class="m">Regression</span><div><div style="height:6px;width:20%;margin-left:78%;border-radius:3px;background:#E03155"></div></div>
+                <span class="m">Hypercare</span><div><div style="height:6px;width:8%;margin-left:92%;border-radius:3px;background:#8B5CF6"></div></div>
+              </div>
+              <span class="m">RACI · entry / exit criteria · Cloud ALM setup</span>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Testing Strategy Generator</h3><p class="sub">AI test strategy for S/4HANA programs</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Writes a 17-section strategy, from RICEFW scope and RACI to multi-wave execution, hypercare and Cloud ALM setup. Every section waits for human approval before the Gantt plan and Word export.</p>
+          <div class="stack"><span>Cloud ALM</span><span>Human in the loop</span><span>DOCX</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:var(--violet);--b:var(--magenta)">
+          <div class="win"><div class="bar"><em>SAP Defect Resolver · RCA chat</em></div>
+            <div class="scr">
+              <div class="tbl">
+                <span class="m">DEF-2207</span><div class="ln"></div><span class="pill run">P2</span>
+                <span class="m">DEF-2211</span><div class="ln" style="width:80%"></div><span class="pill ok">Fixed</span>
+                <span class="m">DEF-2219</span><div class="ln" style="width:65%"></div><span class="pill wait">New</span>
+              </div>
+              <div class="bubble me" style="--a:var(--violet)">Why is DEF-2207 blocking invoice posting?</div>
+              <div class="bubble ai">Likely root cause: no tax code on the purchase order. Check tax determination and re-test.</div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>SAP Defect Resolver</h3><p class="sub">Root-cause analysis over defect logs</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Upload an Excel defect log and chat with it. It groups defects, suggests root causes and proposes the fix and the re-test.</p>
+          <div class="stack"><span>Excel input</span><span>RCA</span><span>Chat</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#E4572E;--b:#F29E4C">
+          <div class="win"><div class="bar"><em>Process Plan Pipeline · L2 to L5</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="h">Procure to Pay · To-Be</span><span class="pill ok">Clean core</span></div>
+              <svg viewBox="0 0 240 84" width="100%" style="flex:1;min-height:0" aria-hidden="true">
+                <g stroke="currentColor" stroke-opacity=".18"><line x1="0" y1="28" x2="240" y2="28"/><line x1="0" y1="56" x2="240" y2="56"/><line x1="44" y1="0" x2="44" y2="84"/></g>
+                <g font-size="7" fill="currentColor" fill-opacity=".6"><text x="3" y="17">Buyer</text><text x="3" y="45">AP clerk</text><text x="3" y="73">System</text></g>
+                <g fill="#FDE6DC" stroke="#E4572E"><rect x="54" y="7" width="40" height="15" rx="3"/><rect x="108" y="63" width="40" height="15" rx="3"/><rect x="160" y="35" width="40" height="15" rx="3"/></g>
+                <path d="M94 14H128V63M148 70H180V50" fill="none" stroke="#E4572E" stroke-width="1.2"/>
+                <circle cx="220" cy="42" r="6" fill="none" stroke="#E4572E" stroke-width="2"/><path d="M200 42H214" stroke="#E4572E" stroke-width="1.2"/>
+                <g font-size="6" fill="#9A3412"><text x="58" y="17">Create PO</text><text x="112" y="73">3-way match</text><text x="163" y="45">Post invoice</text></g>
+              </svg>
+              <span class="m">Fiori apps · SAP_BR_ roles · fit-to-standard</span>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Process Plan Pipeline</h3><p class="sub">L2 to L5 process docs with BPMN swimlanes</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Generates L2 to L5 process documentation with BPMN swimlanes, Fiori apps, business roles, configuration paths, fit-to-standard and as-is versus to-be, then exports to PowerPoint and Word.</p>
+          <div class="stack"><span>Signavio-style BPMN</span><span>Fiori</span><span>PPTX · DOCX</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#047857;--b:#10B981">
+          <div class="win"><div class="bar"><em>Fit-to-Standard Workbench · Workshop 3 of 6</em></div>
+            <div class="scr">
+              <div class="cols" style="grid-template-columns:repeat(3,1fr);gap:6px">
+                <div class="kpi"><b style="color:#047857">31</b><span class="m">Fit</span></div>
+                <div class="kpi"><b style="color:#B45309">7</b><span class="m">Gap</span></div>
+                <div class="kpi"><b style="color:#6D28D9">4</b><span class="m">Open</span></div>
+              </div>
+              <div class="tbl">
+                <b>J58</b><span>Accounting and financial close</span><span class="pill ok">Fit</span>
+                <b>J60</b><span>Accounts payable</span><span class="pill run">Gap</span>
+                <b>BD9</b><span>Sell from stock</span><span class="pill" style="background:#EDE9FE;color:#5B21B6">Decide</span>
+              </div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Fit-to-Standard Workbench</h3><p class="sub">AI at the fit-to-standard table</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Walks scope items process by process, records fit, gap and open decisions, and builds the BDCQ list and deviation log while the workshop is still running.</p>
+          <div class="stack"><span>SAP Activate</span><span>Scope items</span><span>BDCQ</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#1D4ED8;--b:#3B82F6">
+          <div class="win"><div class="bar"><em>User Story Generator · Backlog, 14 stories</em></div>
+            <div class="scr">
+              <div class="row" style="gap:4px">
+                <span class="pill" style="background:#EEF2FF;color:#3730A3">Standard config 5</span><span class="pill" style="background:#E8F5E9;color:#2E7D32">Key user 4</span><span class="pill" style="background:#E3F2FD;color:#1565C0">In-app dev 3</span><span class="pill" style="background:#FFF3E0;color:#E65100">Integration 2</span>
+              </div>
+              <div class="kpi" style="text-align:left">
+                <div class="row" style="justify-content:space-between"><b>US-03 Approve blocked invoices</b><span class="pill" style="background:#FEE2E2;color:#991B1B">Must</span></div>
+                <span class="m">Given an invoice over tolerance, when the clerk opens it, then the block reason shows</span>
+              </div>
+              <div class="kpi" style="text-align:left"><div class="row" style="justify-content:space-between"><b>US-04 Vendor reminder email</b><span class="pill" style="background:#FEF3C7;color:#92400E">Should</span></div></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>User Story Generator</h3><p class="sub">From requirement to a clean-core backlog</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Maps each need to an SAP Best Practices scope item, decides fit or gap, and writes stories only for the gaps, each with acceptance criteria and its extensibility type.</p>
+          <div class="stack"><span>Clean core</span><span>Scope items</span><span>Acceptance criteria</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#EA580C;--b:#F59E0B">
+          <div class="win"><div class="bar"><em>S/4HANA Form Agent · Sandbox tenant</em></div>
+            <div class="scr">
+              <div class="bubble ai" style="max-width:100%"><span class="m">You:</span> "Purchase order form with our logo, payment terms and a signature line"</div>
+              <span class="pill ok" style="align-self:flex-start">Business details extracted</span>
+              <span class="pill ok" style="align-self:flex-start">Layout file generated</span>
+              <span class="pill ok" style="align-self:flex-start">Uploaded to the form template app</span>
+              <span class="pill run" style="align-self:flex-start">Activating in S/4HANA</span>
+              <div class="prog" style="--a:#EA580C;--b:#F59E0B"><i style="width:85%"></i></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>S/4HANA Form Agent</h3><p class="sub">Plain English in, live SAP form out</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Describe a form and the agent writes the layout, uploads it and activates it in S/4HANA by driving the screens itself. No form developer needed.</p>
+          <div class="stack"><span>Playwright</span><span>Adobe Forms</span><span>Browser agent</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#0369A1;--b:#0EA5E9">
+          <div class="win"><div class="bar"><em>Invoice Exceptions · 12 waiting</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="h">INV-20417 · Apex Components</span><span class="pill run">Price variance</span></div>
+              <div class="cols" style="grid-template-columns:repeat(3,1fr);gap:6px">
+                <div class="kpi"><span class="m">PO price</span><b>₹412.00</b></div>
+                <div class="kpi"><span class="m">Invoiced</span><b>₹436.70</b></div>
+                <div class="kpi"><span class="m">Confidence</span><b>0.92</b></div>
+              </div>
+              <span class="m">6% above PO. Contract allows 2%. Last rise was credited in March.</span>
+              <div class="row"><span class="pill" style="background:#0369A1;color:#fff">Approve</span><span class="pill" style="background:#FEE2E2;color:#991B1B">Block</span><span class="pill wait">Edit email</span></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Invoice Exception Agent</h3><p class="sub">Three-way match, explained</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Rules do the matching and AI does the explaining: it pulls contract terms and past fixes, recommends an action and drafts the vendor email. A person approves every step.</p>
+          <div class="stack"><span>SAP CAP</span><span>HANA Cloud vectors</span><span>Generative AI Hub</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- MORE SAP BUILDS -->
+  <section id="toolkit">
+    <div class="sec-head">
+      <span class="eyebrow">More SAP builds</span>
+      <h2>More builds</h2>
+      <p>delivery tools, agents &amp; experiments</p>
+    </div>
+    <div class="grid three">
+
+      <article class="card">
+        <div class="shot" style="--a:#1F6F8B;--b:#99D5C9">
+          <div class="win"><div class="bar"><em>ISLM Scenario Advisor</em></div>
+            <div class="scr">
+              <span class="h">Best-fit intelligent scenarios</span>
+              <div style="display:grid;grid-template-columns:1fr 90px;gap:6px 10px;align-items:center">
+                <span>Payment date prediction</span><div class="prog" style="--a:#1F6F8B;--b:#99D5C9"><i style="width:88%"></i></div>
+                <span>Goods receipt delay</span><div class="prog" style="--a:#1F6F8B;--b:#99D5C9"><i style="width:74%"></i></div>
+                <span>Stock in transit</span><div class="prog" style="--a:#1F6F8B;--b:#99D5C9"><i style="width:61%"></i></div>
+                <span>Contract consumption</span><div class="prog" style="--a:#1F6F8B;--b:#99D5C9"><i style="width:45%"></i></div>
+              </div>
+              <span class="m">Train · activate · monitor</span>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>ISLM Scenario Advisor</h3><p class="sub">Intelligent scenario lifecycle advice</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Recommends which SAP intelligent scenarios fit a client's processes, and guides training, activation and monitoring in Intelligent Scenario Lifecycle Management.</p>
+          <div class="stack"><span>ISLM</span><span>Embedded ML</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#B45309;--b:#F59E0B">
+          <div class="win"><div class="bar"><em>SAP AI Use Case Navigator</em></div>
+            <div class="scr">
+              <div class="kpi" style="text-align:left"><span class="m">Search use cases…</span></div>
+              <div class="tbl" style="grid-template-columns:1fr auto auto">
+                <span>Bid analysis agent</span><span class="m">Low effort</span><span class="pill ok">Ready now</span>
+                <span>Cash application</span><span class="m">Licensed</span><span class="pill ok">Ready now</span>
+                <span>SOW drafting</span><span class="m">Build</span><span class="pill run">Next quarter</span>
+              </div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>SAP AI Use Case Navigator</h3><p class="sub">What to switch on, what to build</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Sorts SAP Business AI use cases by readiness, effort and licence so teams start with the quick wins.</p>
+          <div class="stack"><span>SAP Business AI</span><span>Prioritisation</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#0F766E;--b:#14B8A6">
+          <div class="win"><div class="bar"><em>Knowledge Agent</em></div>
+            <div class="scr">
+              <div class="row" style="gap:4px"><span class="pill" style="background:#0F766E;color:#fff">Fix an issue</span><span class="pill" style="background:#CCFBF1;color:#115E59">Capture an expert</span><span class="pill" style="background:#CCFBF1;color:#115E59">Onboard</span></div>
+              <svg viewBox="0 0 200 70" width="100%" style="flex:1;min-height:0" aria-hidden="true"><g stroke="#99F6E4" stroke-width="1.5"><line x1="30" y1="35" x2="80" y2="15"/><line x1="80" y1="15" x2="130" y2="40"/><line x1="30" y1="35" x2="90" y2="58"/><line x1="130" y1="40" x2="175" y2="20"/><line x1="90" y1="58" x2="130" y2="40"/></g><circle cx="30" cy="35" r="7" fill="#0F766E"/><circle cx="80" cy="15" r="5" fill="#14B8A6"/><circle cx="130" cy="40" r="6" fill="#F59E0B"/><circle cx="90" cy="58" r="4" fill="#8B5CF6"/><circle cx="175" cy="20" r="5" fill="#EC4899"/></svg>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Knowledge Agent</h3><p class="sub">Keep what experts know before they leave</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Interviews senior people, solves issues from past fixes and helps new joiners, all on one knowledge graph.</p>
+          <div class="stack"><span>Knowledge graph</span><span>3 modes</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#4338CA;--b:#6366F1">
+          <div class="win"><div class="bar"><em>Agent Orchestrator</em></div>
+            <div class="scr">
+              <svg viewBox="0 0 200 92" width="100%" style="flex:1;min-height:0" aria-hidden="true"><g stroke="#A5B4FC" stroke-width="1.2"><line x1="100" y1="18" x2="30" y2="60"/><line x1="100" y1="18" x2="78" y2="60"/><line x1="100" y1="18" x2="122" y2="60"/><line x1="100" y1="18" x2="170" y2="60"/></g><rect x="62" y="6" width="76" height="22" rx="6" fill="#4338CA"/><text x="100" y="21" font-size="9" fill="#fff" text-anchor="middle">Orchestrator</text><g font-size="7.5" text-anchor="middle"><rect x="8" y="60" width="44" height="20" rx="5" fill="#E0E7FF"/><text x="30" y="73" fill="#3730A3">Docs</text><rect x="56" y="60" width="44" height="20" rx="5" fill="#E0E7FF"/><text x="78" y="73" fill="#3730A3">Fit-gap</text><rect x="100" y="60" width="44" height="20" rx="5" fill="#E0E7FF"/><text x="122" y="73" fill="#3730A3">Defects</text><rect x="148" y="60" width="44" height="20" rx="5" fill="#E0E7FF"/><text x="170" y="73" fill="#3730A3">Plans</text></g></svg>
+              <span class="m">Shared memory · audit trail of every step</span>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Agent Orchestrator</h3><p class="sub">My tools, wired into one network</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Routes a request to the right specialist agent, with shared memory and an audit trail of every step.</p>
+          <div class="stack"><span>Routing</span><span>Shared memory</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#334155;--b:#64748B">
+          <div class="win"><div class="bar"><em>Inspection Reports</em></div>
+            <div class="scr">
+              <div class="tbl" style="grid-template-columns:1fr auto">
+                <span>Electrical</span><span class="pill" style="background:#FEE2E2;color:#991B1B">Critical</span>
+                <span>Roof</span><span class="pill run">Major</span>
+                <span>Plumbing</span><span class="pill ok">Good</span>
+              </div>
+              <span class="m">7 actions, sorted by urgency</span>
+              <div class="ln"></div><div class="ln" style="width:70%"></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Inspection Report Automation</h3><p class="sub">Notes and photos to a finished report</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Reads field notes, PDFs and photos and writes the full report with condition ratings and prioritised fixes.</p>
+          <div class="stack"><span>Multimodal</span><span>PDF · photos</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#3D4A5C;--b:var(--cobalt)">
+          <div class="win"><div class="bar"><em>Manufacturing Digital Twin · Line 2</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="h">Live line status</span><span class="pill ok">API connected</span></div>
+              <div class="cols" style="grid-template-columns:repeat(3,1fr);gap:6px">
+                <div class="kpi"><span class="m">Press</span><b>92%</b></div>
+                <div class="kpi"><span class="m">Weld</span><b style="color:#B7791F">71%</b></div>
+                <div class="kpi"><span class="m">Paint</span><b>88%</b></div>
+              </div>
+              <span class="m">› Agent: weld cell below target, scheduling maintenance</span>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Manufacturing Digital Twin</h3><p class="sub">Live plant data in a working model</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">A production-line twin with live API integration, built to show agents acting on operational data.</p>
+          <div class="stack"><span>APIs</span><span>Simulation</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- MORE PRODUCTS -->
+  <section id="more">
+    <div class="sec-head">
+      <span class="eyebrow">More products</span>
+      <h2>More products</h2>
+      <p>AI apps I've designed &amp; shipped beyond SAP</p>
+    </div>
+    <div class="grid three">
+
+      <article class="card">
+        <div class="shot" style="--a:#3B2F9E;--b:#7A6BF0">
+          <div class="win"><div class="bar"><em>CAZERO · Agentic finance AI</em></div>
+            <div class="scr">
+              <div class="row" style="gap:4px"><span class="pill" style="background:#ECE9FF;color:#3B2F9E">TaxGenius</span><span class="pill wait">GSTMaster</span><span class="pill wait">AuditAI</span><span class="pill wait">PayrollPro</span><span class="pill wait">CorpShield</span><span class="pill wait">WealthOracle</span></div>
+              <div class="bubble me" style="--a:#3B2F9E">Can I claim my PPF deposit this year?</div>
+              <div class="bubble ai">Yes, under section 80C in the old regime, within the ₹1.5 lakh limit. The new regime does not allow it.</div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>CAZERO</h3><p class="sub">An agentic CA network for India</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Six specialist agents for income tax, GST, audit, payroll, company law and financial planning, each grounded in Indian rules. Packaged for Vercel with a server-side API proxy so the key never reaches the browser.</p>
+          <div class="stack"><span>6 agents</span><span>Mobile-first</span><span>Vercel</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#1A0B3B;--b:#5B21B6">
+          <div class="win"><div class="bar"><em>JyotishAI · हिंदी / English</em></div>
+            <div class="scr dark cosmic" style="flex-direction:row;align-items:center;--d-bg:#120A2A;--d-ink:#F3E8FF;--d-soft:#2A1B52">
+              <svg viewBox="0 0 100 100" style="width:50%;flex:none" aria-hidden="true">
+                <rect x="4" y="4" width="92" height="92" fill="none" stroke="#E8C26A" stroke-width="2"/>
+                <path d="M4 4L96 96M96 4L4 96M50 4L96 50L50 96L4 50Z" fill="none" stroke="#A78BFA" stroke-width="1.4"/>
+                <g font-size="7" fill="currentColor" fill-opacity=".75" text-anchor="middle"><text x="50" y="30">1 Lg</text><text x="27" y="15">2</text><text x="15" y="27">3 Mo</text><text x="30" y="53">4</text><text x="50" y="76">7 Ju</text><text x="73" y="53">10 Sa</text><text x="73" y="15">12</text><text x="85" y="76">9</text></g>
+              </svg>
+              <div style="display:flex;flex-direction:column;gap:5px;min-width:0">
+                <span class="h" style="font-family:var(--f-deva);font-size:15px">जन्म कुंडली</span>
+                <span class="m">Panchanga · Navamsa · Dasha</span>
+                <div class="ln"></div><div class="ln" style="width:70%"></div>
+                <span class="pill" style="background:linear-gradient(90deg,#E8C26A,#F472B6);color:#1A0B3B">Ask the AI pandit</span>
+              </div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>JyotishAI</h3><p class="sub">Bilingual Vedic astrology app</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Nine screens from Janma Kundli and Kundli Milan to Muhurat and tarot, on an astronomy engine built from Jean Meeus's algorithms with Lahiri ayanamsa. AI pandits answer from 40+ chart data points.</p>
+          <div class="stack"><span>Astronomy engine</span><span>Hindi · English</span><span>React</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#FF7A00;--b:#138808">
+          <div class="win"><div class="bar"><em>BharatRise · District War Room</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="h">Scheme coverage gaps</span><span class="m">sample district</span></div>
+              <div style="display:grid;grid-template-columns:70px 1fr;gap:6px 10px;align-items:center">
+                <span class="m">PM-KISAN</span><div class="prog" style="--a:#FF7A00;--b:#FFB46B"><i style="width:38%"></i></div>
+                <span class="m">Ayushman</span><div class="prog" style="--a:#FF7A00;--b:#FFB46B"><i style="width:52%"></i></div>
+                <span class="m">PM Awas</span><div class="prog" style="--a:#FF7A00;--b:#FFB46B"><i style="width:27%"></i></div>
+                <span class="m">Jal Jeevan</span><div class="prog" style="--a:#FF7A00;--b:#FFB46B"><i style="width:19%"></i></div>
+              </div>
+              <div class="row"><span class="pill ok">30 / 60 / 90 day plan</span><span class="pill" style="background:#FDE7F0;color:#9A1F57">🪷 Ask Pratibha</span></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>BharatRise</h3><p class="sub">Poverty-reduction tool for government</p></div><span class="status s-demo">Pitched</span></div>
+          <p class="body">Finds which families each scheme is missing and why, district by district, then gives officers a 30/60/90-day plan, role-based daily duties and an AI advisor, Pratibha.</p>
+          <div class="stack"><span>Gap finder</span><span>Governance</span><span>Vanilla JS</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#0B1F3A;--b:#16A085">
+          <div class="win"><div class="bar"><em>TalentRadar · Scan</em></div>
+            <div class="scr dark" style="flex-direction:row;align-items:center;gap:12px;--d-bg:#06131F;--d-ink:#D7F5EE;--d-soft:#0E2533">
+              <svg viewBox="0 0 100 100" style="width:44%;flex:none" aria-hidden="true">
+                <g fill="none" stroke="#16A085" stroke-opacity=".5"><circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="31"/><circle cx="50" cy="50" r="16"/></g>
+                <path class="sweep" d="M50 50L50 4A46 46 0 0 1 89 26Z" fill="#16A085" fill-opacity=".25"/>
+                <g fill="#16A085"><circle cx="70" cy="30" r="3"/><circle cx="30" cy="62" r="3"/><circle cx="62" cy="72" r="3"/></g><circle cx="38" cy="28" r="3.5" fill="#FF5C3A"/>
+              </svg>
+              <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+                <span class="h">Hot leads</span>
+                <span class="pill" style="background:#FFE6DE;color:#A2361A">92% match</span>
+                <span class="pill ok">Open signal</span>
+                <span class="m">GitHub · job portals</span>
+              </div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>TalentRadar</h3><p class="sub">Find passive talent before others do</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Scans public profiles for signals that a person may be open to a move, scores the match and surfaces hot leads. Full backend with a database, plus job-market salary and skills insight for India.</p>
+          <div class="stack"><span>Node.js</span><span>MongoDB</span><span>Signal scoring</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#0F766E;--b:#2DD4BF">
+          <div class="win"><div class="bar"><em>Presales Agent</em></div>
+            <div class="scr dark" style="--d-bg:#0B1A1C;--d-ink:#E6FFFB;--d-soft:#13302F">
+              <div class="cols" style="grid-template-columns:repeat(3,1fr);gap:6px">
+                <div class="tile">Lead qualification</div><div class="tile">Account research</div><div class="tile on">Tailored pitch</div>
+                <div class="tile">Demo script</div><div class="tile">RFP response</div><div class="tile">Follow-up email</div>
+              </div>
+              <div class="ln"></div><div class="ln" style="width:75%"></div>
+              <span class="pill ok" style="align-self:flex-start">6-slide deck · .pptx</span>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Presales Agent</h3><p class="sub">The presales job, automated</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Six live workflows: qualify a lead, research the account, tailor the pitch, script the demo, draft the RFP answer and write the follow-up. It also builds an editable PowerPoint pitch deck.</p>
+          <div class="stack"><span>6 workflows</span><span>PptxGenJS</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#0F1E3C;--b:#C8A84B">
+          <div class="win"><div class="bar"><em>Strategic Performance Management · Goal cascade</em></div>
+            <div class="scr">
+              <span class="h">KRA: Schedule adherence</span>
+              <div class="cascade">
+                <span>Board</span><i class="ok">✓</i><span>MD</span><i class="ok">✓</i><span>VP</span><i style="background:#FFF1CC;color:#7A4A00">✎</i><span>Manager</span><i class="wait">…</i><span>Engineer</span>
+              </div>
+              <span class="m">Human gate at every level · approve · modify · hold · escalate</span>
+              <div class="ln"></div><div class="ln" style="width:65%"></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Performance Management System</h3><p class="sub">Strategy to KPIs for an EPC company</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Balanced scorecard, KRA and KPI manager, MBO tracking, calibration and department scorecards. Goals cascade from the board to engineers with a human approval gate and audit trail at each level.</p>
+          <div class="stack"><span>Balanced scorecard</span><span>MBO</span><span>Audit trail</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:var(--leaf);--b:#9BD33A">
+          <div class="win"><div class="bar"><em>GreenIndia</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="h">Carbon footprint</span><span class="pill ok">Pledge kept</span></div>
+              <svg viewBox="0 0 200 50" width="100%" aria-hidden="true"><polyline points="0,8 30,14 60,12 90,24 120,28 150,36 200,42" fill="none" stroke="#3BA55C" stroke-width="3"/><polygon points="0,8 30,14 60,12 90,24 120,28 150,36 200,42 200,50 0,50" fill="#3BA55C" fill-opacity=".15"/></svg>
+              <div class="row" style="gap:4px"><span class="pill wait">Eco vendors</span><span class="pill wait">Food waste</span><span class="pill wait">Carbon market</span><span class="pill wait">EcoBot</span></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>GreenIndia</h3><p class="sub">Sustainability platform for India</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Twelve features in one app: carbon calculator, eco-vendor directory, food-waste log, tree-planting land finder, a carbon market for points, an AI supply-chain review and an eco chatbot.</p>
+          <div class="stack"><span>12 modules</span><span>Carbon credits</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#1B2A6B;--b:var(--sky)">
+          <div class="win"><div class="bar"><em>Orbital Works</em></div>
+            <div class="scr" style="flex-direction:row;align-items:center">
+              <svg viewBox="0 0 220 140" style="width:62%;flex:none" aria-hidden="true">
+                <ellipse cx="110" cy="70" rx="92" ry="44" fill="none" stroke="#14A3E0" stroke-dasharray="3 4"/>
+                <circle cx="110" cy="70" r="24" fill="#2F5BEA"/><path d="M96 62q10-8 20 0t14 6" stroke="#3BA55C" stroke-width="5" fill="none"/>
+                <g class="orbit-sat"><rect x="196" y="66" width="10" height="8" fill="#FFB400"/><rect x="186" y="68" width="8" height="4" fill="#14A3E0"/><rect x="208" y="68" width="8" height="4" fill="#14A3E0"/></g>
+              </svg>
+              <div style="display:flex;flex-direction:column;gap:5px">
+                <span class="m">Capability index</span><span class="h" style="font-size:20px">87</span>
+                <span class="pill ok">Flight ready</span>
+              </div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Orbital Works</h3><p class="sub">Satellite mission simulator</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Specify a spacecraft's payload, orbit, power, downlink and launcher, pass flight-readiness checks, fly the ascent and get a capability score.</p>
+          <div class="stack"><span>Simulation</span><span>React</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#111827;--b:#F59E0B">
+          <div class="win"><div class="bar"><em>Morning Desk · NSE research</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="h">Today's picks</span><span class="m">Nifty 200 · swing</span></div>
+              <div class="tbl" style="grid-template-columns:auto 1fr auto">
+                <span class="m">Pick 1</span><span>Entry · stop · target</span><span class="pill ok">Medium</span>
+                <span class="m">Pick 2</span><span>Entry · stop · target</span><span class="pill run">Low</span>
+              </div>
+              <span class="m">Journal: suggested vs actual</span>
+              <div class="ln"></div><div class="ln" style="width:55%"></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Morning Desk</h3><p class="sub">Daily stock research agent</p></div><span class="status s-live">Live</span></div>
+          <p class="body">Set a risk profile, paste the morning's market snapshot and get up to three researched ideas with thesis, entry, stop-loss and failure mode. A journal tracks real results. Research, not advice.</p>
+          <a class="try" href="https://claude.ai/artifact/Jw6ZYuf6F3rbhs1nNkHm4r" target="_blank" rel="noopener">Open the app ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- RECOGNITION -->
+  <section id="recognition">
+    <div class="sec-head"><span class="eyebrow">Awards</span><h2>Awards &amp; hackathons</h2><p>judged against the open market</p></div>
+    <div class="awards">
+      <div class="award" style="--a:#0067B8;--b:#00A4EF"><span class="medal">🏆</span><b>Microsoft Hackathon</b><span>Winner</span></div>
+      <div class="award" style="--a:#1A73E8;--b:#34A853"><span class="medal">🏆</span><b>Google AI Hackathon</b><span>Winner</span></div>
+      <div class="award" style="--a:#0A6ED1;--b:#7C3AED"><span class="medal">🏆</span><b>SAP AI Hackathon</b><span>Hack2Build · Innovation Award</span></div>
+      <div class="award" style="--a:#EA4335;--b:#FBBC04"><span class="medal">🚀</span><b>AI Builder Cup 2026</b><span>Google Cloud · participating</span></div>
+      <div class="award" style="--a:#0B8F63;--b:#14B8A6"><span class="medal">●</span><b>Live on a marketplace</b><span>Published AI agent</span></div>
+    </div>
+  </section>
+
+  <!-- ALSO BUILT -->
+  <section id="also">
+    <div class="sec-head"><span class="eyebrow">Also built</span><h2>Also built</h2><p>tools, simulators &amp; learning apps</p></div>
+    <div class="also">
+      <div style="--c:var(--teal)"><b>S/4HANA Public Cloud Consultant Agent</b>Answers configuration and process questions</div>
+      <div style="--c:var(--sun)"><b>SAP Test Data Generator</b>Realistic test data for S/4HANA scenarios</div>
+      <div style="--c:var(--violet)"><b>TPM Interview Simulator</b>Scenario questions, spoken answers and AI scoring against a rubric</div>
+      <div style="--c:var(--coral)"><b>Exam prep platforms</b>Practice banks for Microsoft AB-731 (150 questions), Claude Certified Architect (124), ABAP Cloud and UPSC</div>
+      <div style="--c:var(--magenta)"><b>Future Tech Explorer</b>Interactive timeline of enterprise AI from 2025 to 2050</div>
+      <div style="--c:var(--leaf)"><b>Science Lab learning games</b>Class VIII quizzes with instant feedback · <a href="https://claude.ai/artifact/6gUrdMqVZCuEtsRyvCMGXn" target="_blank" rel="noopener">Exploring Forces ↗</a> · <a href="https://claude.ai/artifact/UxV6V5XvYQvijaN22RbALu" target="_blank" rel="noopener">Invisible Living World ↗</a></div>
+    </div>
+  </section>
+
+  <!-- WRITING -->
+  <section id="writing">
+    <div class="sec-head"><span class="eyebrow">Writing</span><h2>Writing</h2><p>AI in Practice · fortnightly on LinkedIn</p></div>
+    <div class="grid">
+      <a class="post" href="https://linkedin.com/in/neeti-8454417b" target="_blank" rel="noopener">
+        <div class="cover" style="background:linear-gradient(135deg,#1E1B4B,#7C3AED 55%,#F472B6)"><span>AI in Practice · 13 Oct 2026</span><b>When Light Does The Computing</b><span>Read on LinkedIn ↗</span></div>
+        <div class="txt"><h3>When Light Does The Computing</h3><p>An optical neural network breakthrough, and what it could mean for the cost of running AI.</p></div>
+      </a>
+      <a class="post" href="https://linkedin.com/in/neeti-8454417b" target="_blank" rel="noopener">
+        <div class="cover"><span>AI in Practice · Edition 1 · Sept 2026</span><b>The Next AI Advantage Is Business Expertise</b><span>Read on LinkedIn ↗</span></div>
+        <div class="txt"><h3>The Next AI Advantage Is Business Expertise</h3><p>Why people who know the process will get more out of AI than people who only know the model.</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="sec-head"><span class="eyebrow">Career</span><h2>Experience</h2></div>
+    <div class="ledger">
+      <div class="job" style="--c:var(--violet)">
+        <span class="when">Apr 2021 – present</span>
+        <div>
+          <h3>Accenture</h3>
+          <p class="title">Transformation Expert – AI, Agentic AI, FDE, SAP AI, S/4HANA Cloud</p>
+          <ul>
+            <li>Lead SAP S/4HANA Public Cloud implementations for finance, procurement and sales.</li>
+            <li>Drive generative and agentic AI inside SAP programs; certified Forward Deployed Engineer.</li>
+            <li>Built SAP Sapphire 2026 content on S/4HANA Cloud Public Edition.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job" style="--c:var(--coral)">
+        <span class="when">Jan 2019 – Apr 2021</span>
+        <div><h3>Colt Technology Services</h3><p class="title">Solution Architect – SuccessFactors</p>
+          <ul><li>Led SuccessFactors implementation and digital HR transformation; automated HRIS operations.</li></ul></div>
+      </div>
+      <div class="job" style="--c:var(--teal)">
+        <span class="when">Aug 2018 – Dec 2018</span>
+        <div><h3>Cloudway Technologies</h3><p class="title">SuccessFactors Lead Consultant</p>
+          <ul><li>Built and led the SuccessFactors practice and consulting team.</li></ul></div>
+      </div>
+      <div class="job" style="--c:var(--sun)">
+        <span class="when">Jun 2016 – Aug 2018</span>
+        <div><h3>Orane Consulting</h3><p class="title" style="color:#B37D00">Digital Transformation Expert</p>
+          <ul><li>Led SuccessFactors HR transformations from proposal to support; ran JAD workshops and proofs of concept for client leadership.</li></ul></div>
+      </div>
+      <div class="job" style="--c:var(--cobalt)">
+        <span class="when">Jul 2006 – Jul 2014</span>
+        <div><h3>IBM</h3><p class="title">Enterprise Operations &amp; HR Transformation Specialist</p>
+          <ul>
+            <li>Moved onboarding and recruiting from manual to digital, onboarding 10,000+ new hires across India.</li>
+            <li>Designed integration processes for acquisitions including Vodafone, Idea and India Infoline.</li>
+          </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="sec-head"><span class="eyebrow">40+ certifications</span><h2>Certifications</h2></div>
+    <div class="certs">
+      <div class="box" style="--c:var(--cobalt)">
+        <span class="eyebrow">SAP and process</span>
+        <ul>
+          <li>Positioning the Autonomous Enterprise</li>
+          <li>Positioning SAP Business AI Solutions</li>
+          <li>S/4HANA Cloud Public Edition Implementation Consultant</li>
+          <li>Back-End Developer, ABAP Cloud</li>
+          <li>Solution Transformation Consultant, SAP Cloud ALM</li>
+          <li>Process Management Consultant, SAP Signavio</li>
+          <li>SuccessFactors Onboarding 2.0</li>
+        </ul>
+      </div>
+      <div class="box" style="--c:var(--coral)">
+        <span class="eyebrow">AI, cloud and data</span>
+        <ul>
+          <li>Forward Deployed Engineer – Accenture</li>
+          <li>AI Agent Developer Specialization – Vanderbilt University</li>
+          <li>Responsible Generative AI – University of Michigan</li>
+          <li>Certified Data Scientist – Harvard University</li>
+          <li>AWS Cloud Technology Consultant</li>
+          <li>Google Cloud Digital Leader</li>
+          <li>Celonis process mining certifications</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="sec-head"><span class="eyebrow">Education</span><h2>Education</h2></div>
+    <div class="edu">
+      <div style="--c:var(--magenta)"><span class="yr">2023</span><h3>Digital Transformation Program</h3><p>Indian School of Business</p></div>
+      <div style="--c:var(--violet)"><span class="yr">2022</span><h3>Women in Leadership Program</h3><p>Indian School of Business</p></div>
+      <div style="--c:var(--teal)"><span class="yr">2006 – 2008</span><h3>MCA, ERP specialisation</h3><p>ICFAI University · First division</p></div>
+      <div style="--c:var(--coral)"><span class="yr">2004 – 2006</span><h3>MBA, HR and IT</h3><p>GGS Indraprastha University · College topper</p></div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <h2>Let's build the autonomous enterprise.</h2>
+    <p>Bring me an SAP AI roadmap that needs to ship, a process that should run itself, or a team that needs to learn agentic delivery.</p>
+    <div class="row">
+      <span class="addr">neeti4mathur@gmail.com</span>
+      <button class="copy" type="button" data-copy="neeti4mathur@gmail.com" id="copy-2">Copy email</button>
+      <a href="https://linkedin.com/in/neeti-8454417b" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <footer><span>Neeti Singh · Delhi NCR, India</span><span>© 2026</span></footer>
+</div>
+
+<script>
+document.querySelectorAll('button.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var label=btn.textContent, v=btn.dataset.copy, done=function(){btn.textContent='Copied';setTimeout(function(){btn.textContent=label},1600)};
+    try{navigator.clipboard.writeText(v).then(done,function(){sel(btn)});}catch(e){sel(btn)}
+  });
+});
+function sel(btn){var el=btn.parentNode.querySelector('.addr');if(!el)return;var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);}
+</script>
+
+</body>
+</html>
