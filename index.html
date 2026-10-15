@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Neeti Singh Portfolio</title>
+<title>Neeti Singh Modern Portfolio</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Neeti Singh: SAP Business AI and agentic AI leader. 18+ years in enterprise transformation, 20+ AI tools built, 40+ certifications.">
+<meta name="description" content="Neeti Singh: AI and SAP Business AI leader and agentic AI builder. 18+ years in enterprise transformation, 38 AI products, Microsoft, Google AI and SAP AI hackathon wins, 40+ certifications.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap">
 <style>
 /* Layout: one 1120px column. Every product sits on its own saturated colour backdrop with an
    app-window preview, like a screenshot on a slide; the rest of the page stays calm around them. */
@@ -70,7 +70,7 @@ p{margin:0}
 .addr{font-family:var(--f-mono);font-size:13px;user-select:all;word-break:break-all}
 button.copy{font:500 12px var(--f-mono);border:1px solid var(--line);background:var(--soft);color:var(--ink);border-radius:6px;padding:4px 9px;cursor:pointer}
 button.copy:hover{border-color:var(--cobalt);color:var(--cobalt)}
-.links{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.links{display:grid;grid-template-columns:1fr;gap:8px}
 .links a{display:flex;align-items:center;gap:8px;padding:9px 10px;border-radius:10px;text-decoration:none;font-weight:600;font-size:14px;color:#fff}
 .links a.li{background:#0A66C2} .links a.nl{background:var(--coral)}
 .meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
@@ -231,55 +231,271 @@ footer{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;
 .award span:last-child{font-size:14px;opacity:.92}
 @media (max-width:900px){.awards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.awards{grid-template-columns:1fr}}
+
+/* Leadership */
+.lead-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.lead{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:8px;border-top:5px solid var(--c)}
+.lead .ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;color:#fff;background:var(--c);font-size:18px}
+.lead h3{font-family:var(--f-body);font-size:20px;font-weight:600}
+.lead p{color:var(--muted);font-size:15.5px}
+.record{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px 28px}
+.record h3,.playbook h3{font-family:var(--f-body);font-size:20px;font-weight:600;margin-bottom:10px}
+.record ul{margin:0;padding-left:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 28px;font-size:15.5px}
+.playbook{border-radius:18px;padding:26px 28px;color:#fff;background:linear-gradient(120deg,#1E1B4B,#3730A3 50%,#0E7490)}
+.playbook ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;counter-reset:step}
+.playbook li{counter-increment:step;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:4px}
+.playbook li::before{content:counter(step);font:600 26px/1 var(--f-display);color:#FDE68A}
+.playbook li b{font-size:17px}
+.playbook li span{font-size:13.5px;opacity:.88}
+/* AI engineering */
+.eng{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.eng div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;font-size:14px;color:var(--muted);border-left:4px solid var(--c)}
+.eng b{display:block;color:var(--ink);font-size:16px;margin-bottom:4px}
+/* EdTech */
+.edgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.ed{border-radius:18px;padding:22px;color:#fff;background:linear-gradient(135deg,var(--a),var(--b));display:flex;flex-direction:column;gap:6px}
+.ed .emo{font:600 26px/1 var(--f-display);width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.2);display:grid;place-items:center}
+.ed b{font-size:19px}
+.ed p{font-size:14.5px;opacity:.95}
+.ed a{color:#fff;font-weight:600}
+@media (max-width:900px){.lead-grid,.edgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.eng{grid-template-columns:repeat(2,minmax(0,1fr))}.playbook ol{grid-template-columns:repeat(2,minmax(0,1fr))}.record ul{grid-template-columns:1fr}}
+@media (max-width:640px){.lead-grid,.edgrid,.eng,.playbook ol{grid-template-columns:1fr}}
+
+.cheque{border:1px dashed #9CC5B0;border-radius:6px;padding:7px 8px;background:#F3FAF6;display:flex;flex-direction:column;gap:5px;position:relative;color:#1A1D26}
+.stamp{position:absolute;right:8px;bottom:6px;border:2px solid #198754;color:#198754;font-weight:800;font-size:10px;padding:1px 6px;border-radius:4px;transform:rotate(-8deg)}
+.avatar{width:120px;height:120px}.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+
+
+/* ===================== Modern product edition =====================
+   White canvas, Geist type, one accent blue, bento cards, dot-grid hero, sticky nav. */
+:root{
+  --bg:#FFFFFF; --surface:#FFFFFF; --ink:#0A0A0A; --muted:#5F6368; --line:#E8EAED; --soft:#F6F7F9;
+  --green:#1A73E8; --acc:#1A73E8; --acc-soft:#E8F0FE;
+  --f-display:"Geist","Helvetica Neue",Arial,sans-serif; --f-body:"Geist","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"Geist Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B0C0E; --surface:#121316; --ink:#F1F3F4; --muted:#9AA0A6; --line:#26282C; --soft:#17181B; --green:#8AB4F8; --acc:#8AB4F8; --acc-soft:#1B2638}}
+:root[data-theme="dark"]{--bg:#0B0C0E; --surface:#121316; --ink:#F1F3F4; --muted:#9AA0A6; --line:#26282C; --soft:#17181B; --green:#8AB4F8; --acc:#8AB4F8; --acc-soft:#1B2638}
+
+body{font-family:var(--f-body);margin:0;-webkit-font-smoothing:antialiased}
+.wrap{gap:112px;padding-block:0 48px}
+.glow{display:none}
+.scr>*{flex-shrink:0}
+a{color:var(--acc)}
+
+section{scroll-margin-top:90px}
+/* nav */
+.topnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;width:100vw;margin-left:calc(50% - 50vw);
+  background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line);margin-bottom:-112px}
+.topnav-in{max-width:1120px;margin:0 auto;padding:14px max(16px,env(safe-area-inset-right,0px)) 14px max(16px,env(safe-area-inset-left,0px));display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{font-weight:600;letter-spacing:-.02em;color:var(--ink);text-decoration:none;font-size:16px}
+.navlinks{display:flex;gap:22px;align-items:center;font-size:14px}
+.navlinks a{color:var(--muted);text-decoration:none}
+.navlinks a:hover{color:var(--ink)}
+.navlinks a.navcta{color:var(--bg);background:var(--ink);padding:7px 14px;border-radius:999px}
+
+/* hero band */
+.band{width:100vw;margin-left:calc(50% - 50vw);padding-block:96px 40px;
+  background-image:radial-gradient(color-mix(in srgb,var(--muted) 28%,transparent) 1px,transparent 1px);background-size:22px 22px;
+  -webkit-mask-image:linear-gradient(#000 65%,transparent);mask-image:linear-gradient(#000 65%,transparent)}
+.band-in{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:56px}
+.band .hero{grid-template-columns:minmax(0,1fr) 340px;gap:56px}
+.band .avatar{width:104px;height:104px;padding:3px;background:conic-gradient(from 200deg,#4285F4,#34A853,#FBBC04,#EA4335,#4285F4)}
+.band .avatar img{border:3px solid var(--bg)}
+.band h1{font-family:var(--f-display);font-weight:600;font-size:clamp(52px,8vw,100px);letter-spacing:-.045em;line-height:.95;margin-top:26px;color:var(--ink)}
+.band .role{display:inline-block;background:var(--acc-soft);-webkit-background-clip:initial;background-clip:initial;color:var(--acc);font-family:var(--f-mono);font-weight:500;font-size:13px;padding:6px 12px;border-radius:999px;margin-top:22px;line-height:1.5}
+.band .thesis{color:var(--muted);font-size:19px;line-height:1.65;margin-top:22px}
+.band .flow span:nth-of-type(n){background:var(--surface);color:var(--ink);border:1px solid var(--line);font-family:var(--f-mono);font-size:12.5px;border-radius:8px;padding:6px 10px}
+.band .flow i{color:var(--acc)}
+.band .tag{background:var(--soft);border:0;color:var(--ink);font-weight:500}
+.band .tag::before{background:var(--acc)}
+.band .contact{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 20px 40px -24px rgba(0,0,0,.18)}
+.band .contact h2{font-family:var(--f-display);font-weight:600;letter-spacing:-.02em;font-size:20px}
+.band .links a.li{background:var(--ink);color:var(--bg)}
+.band .links a.nl{background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.band .meta a{color:var(--acc)}
+.band .numbers{gap:14px;border:0;padding:0}
+.band .numbers div:nth-child(n){background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;color:var(--ink)}
+.band .numbers b{font-family:var(--f-display);font-weight:600;font-size:46px;letter-spacing:-.04em;color:var(--ink)}
+.band .numbers div:nth-child(3) b{color:var(--acc)}
+.band .numbers span{color:var(--muted);opacity:1}
+
+/* section heads */
+.sec-head{border-top:0;padding-top:0;align-items:flex-end}
+.sec-head h2{font-family:var(--f-display);font-weight:600;font-size:clamp(32px,4.4vw,48px);letter-spacing:-.04em;line-height:1.02}
+.sec-head h2::before{content:none}
+.sec-head p{font-size:16px;color:var(--muted);text-transform:none;letter-spacing:0}
+
+/* cards */
+.card{border:1px solid var(--line);border-radius:18px;box-shadow:none;transition:border-color .2s,box-shadow .2s,transform .2s}
+.card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--acc) 45%,var(--line));box-shadow:0 24px 48px -28px rgba(26,115,232,.35)}
+.shot{padding:16px 16px 0;background:var(--soft);border-bottom:1px solid var(--line)}
+.win{border:1px solid var(--line);border-bottom:0;border-radius:10px 10px 0 0;box-shadow:0 8px 24px -12px rgba(0,0,0,.2)}
+.card h3{font-family:var(--f-display);font-weight:600;font-size:22px;letter-spacing:-.025em}
+.sub{color:var(--acc);font-size:15px;font-weight:500}
+.status{font-family:var(--f-mono);background:transparent!important;border:1px solid var(--line);color:var(--muted)!important;letter-spacing:.04em}
+.s-live{color:#188038!important;border-color:#CEEAD6}
+.stack span{background:var(--soft);border:0;font-family:var(--f-mono)}
+.try{color:var(--acc)}
+
+/* leadership bento */
+.lead{border:1px solid var(--line);border-radius:18px;padding:26px}
+.lead .ic{background:var(--acc-soft);color:var(--acc);border-radius:10px}
+.lead h3{font-family:var(--f-display);font-weight:600;font-size:19px;letter-spacing:-.02em}
+.record{border:1px solid var(--line);border-radius:18px}
+.record h3,.playbook h3{font-family:var(--f-display);font-weight:600;letter-spacing:-.02em;font-size:22px}
+.record li::marker{color:var(--acc)}
+.playbook{background:#0A0A0A;color:#fff;border:0;border-radius:22px;padding:32px}
+.playbook li{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+.playbook li::before{color:#8AB4F8;font-family:var(--f-mono);font-size:22px}
+.playbook li span{color:#BDC1C6;opacity:1}
+.eng div{border:1px solid var(--line);border-radius:14px}
+.eng b{font-weight:600}
+
+/* awards */
+.award{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:18px}
+.award .medal{display:none}
+.award b{font-family:var(--f-display);font-weight:600;font-size:19px;letter-spacing:-.02em}
+.award span:last-child{color:var(--acc);opacity:1;font-weight:500}
+
+/* rest */
+.also div,.certs .box,.edu div{border:1px solid var(--line);border-radius:16px}
+.also b,.edu h3{font-family:var(--f-display);font-weight:600;letter-spacing:-.02em;font-size:17px}
+.certs li::before{color:var(--acc)}
+.edu .yr,.job .title,.job .title[style]{color:var(--acc)!important}
+.when::before{background:var(--acc);box-shadow:0 0 0 4px var(--acc-soft)}
+.job h3{font-family:var(--f-display);font-weight:600;font-size:22px;letter-spacing:-.025em}
+.post .cover{background:#0A0A0A!important;color:#fff}
+.post .cover b{font-family:var(--f-display);font-weight:600;letter-spacing:-.03em;font-size:26px}
+.post .cover span{color:#8AB4F8;opacity:1}
+.post h3{font-family:var(--f-display);font-weight:600;letter-spacing:-.025em;font-size:22px}
+.cta{background:#0A0A0A;color:#fff;border-radius:24px}
+.cta h2{font-family:var(--f-display);font-weight:600;letter-spacing:-.045em}
+.cta p{color:#BDC1C6}
+.cta .row a,.cta .addr{color:#fff}
+.cta button.copy{color:#fff;border-color:rgba(255,255,255,.3);background:transparent}
+footer{border-top:1px solid var(--line);padding-top:22px}
+
+@media (max-width:900px){.band .hero{grid-template-columns:1fr}.navlinks a:not(.navcta){display:none}}
+@media (max-width:640px){.band{padding-block:84px 24px}.wrap{gap:84px}.band .numbers b{font-size:38px}}
 </style>
 </head>
 <body>
 
-<div class="wrap">
+<div class="wrap" id="top">
+  <nav class="topnav" aria-label="Sections">
+    <div class="topnav-in">
+      <a class="brand" href="#top">Neeti Singh</a>
+      <div class="navlinks">
+        <a href="#leadership">Leadership</a><a href="#flagship">Products</a><a href="#recognition">Awards</a><a href="#experience">Experience</a><a class="navcta" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
   <div class="glow" aria-hidden="true"></div>
 
+  <div class="band"><div class="band-in">
   <header class="hero">
     <div>
       <div class="id">
-        <div class="avatar" aria-hidden="true"><span>NS</span></div>
-        <span class="badge">Open to senior AI transformation roles</span>
+        <div class="avatar"><img src="data:image/jpeg;base64,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" alt="Neeti Singh"></div>
+        
       </div>
       <h1>Neeti Singh</h1>
-      <p class="role">SAP Business AI &amp; Agentic AI Leader · Forward Deployed Engineer</p>
-      <p class="thesis">I turn SAP AI strategy into working software. Eighteen years in enterprise transformation, ten of them in SAP, and I still build the agents myself: 30+ AI tools that configure S/4HANA, write SAP Activate deliverables, test, fix defects and plan the workforce.</p>
+      <p class="role">AI &amp; SAP Business AI Leader · Agentic AI Builder · Forward Deployed Engineer</p>
+      <p class="thesis">I lead AI transformation from the boardroom to the build. Eighteen years in enterprise transformation, ten in SAP, and three hackathon wins later, I still ship the agents myself: 38 AI products, from multi-agent SAP platforms to social-impact tools. That is why my AI strategies survive contact with real systems, real data and real teams.</p>
       <div class="flow" aria-label="How I work">
-        <span>CXO business case</span><i>→</i><span>process insight</span><i>→</i><span>agents built</span><i>→</i><span>live on S/4HANA</span>
+        <span>AI strategy &amp; business case</span><i>→</i><span>operating model &amp; governance</span><i>→</i><span>agents built</span><i>→</i><span>value at scale</span>
       </div>
       <div class="tags">
-        <span class="tag" style="--c:var(--cobalt)">S/4HANA Public Cloud</span><span class="tag" style="--c:var(--violet)">Joule &amp; Joule Agents</span><span class="tag" style="--c:var(--coral)">Multi-agent systems</span><span class="tag" style="--c:var(--teal)">SAP BTP</span><span class="tag" style="--c:var(--sun)">SAP Signavio</span><span class="tag" style="--c:var(--magenta)">Celonis</span><span class="tag" style="--c:var(--leaf)">SuccessFactors</span><span class="tag" style="--c:var(--sky)">React · Python</span><span class="tag" style="--c:var(--coral)">Claude &amp; LLM APIs</span>
+        <span class="tag" style="--c:var(--cobalt)">S/4HANA Public Cloud</span><span class="tag" style="--c:var(--violet)">Joule &amp; Joule Agents</span><span class="tag" style="--c:var(--coral)">Multi-agent systems</span><span class="tag" style="--c:var(--teal)">SAP BTP</span><span class="tag" style="--c:var(--sun)">SAP Signavio</span><span class="tag" style="--c:var(--magenta)">Celonis</span><span class="tag" style="--c:var(--leaf)">SuccessFactors</span><span class="tag" style="--c:var(--sky)">LLMs · RAG · Evals</span><span class="tag" style="--c:var(--coral)">AI governance</span><span class="tag" style="--c:var(--violet)">AI CoE &amp; enablement</span>
       </div>
     </div>
 
     <aside class="contact" aria-label="Contact">
       <h2>Get in touch</h2>
-      <p>Happy to talk about SAP Business AI programs, agentic delivery and the autonomous enterprise.</p>
+      <p>Happy to talk about AI strategy, SAP Business AI and agentic delivery.</p>
       <div class="row">
         <span class="addr">neeti4mathur@gmail.com</span>
         <button class="copy" type="button" data-copy="neeti4mathur@gmail.com" id="copy-1">Copy</button>
       </div>
       <div class="links">
         <a class="li" href="https://linkedin.com/in/neeti-8454417b" target="_blank" rel="noopener">in&nbsp; LinkedIn</a>
-        <a class="nl" href="https://linkedin.com/in/neeti-8454417b" target="_blank" rel="noopener">✎&nbsp; Newsletter</a>
       </div>
       <div class="meta">
         <span>Based</span><span>Delhi NCR, India</span>
         <span>Speaks</span><span>English · French · Hindi</span>
-        <span>Résumé</span><span>On request</span>
+        <span>GitHub</span><span><a href="https://github.com/NeetiSingh-ai" target="_blank" rel="noopener">NeetiSingh-ai</a></span>
       </div>
     </aside>
   </header>
 
   <div class="numbers" aria-label="At a glance">
-    <div><b>18+</b><span>years in enterprise transformation</span></div>
-    <div><b>30+</b><span>AI tools and agent platforms built</span></div>
-    <div><b>40+</b><span>certifications across SAP, AI and cloud</span></div>
-    <div><b>10,000+</b><span>new hires onboarded on a digital process</span></div>
+    <div><b>18+</b><span>years leading enterprise transformation</span></div>
+    <div><b>38</b><span>AI products and agents built</span></div>
+    <div><b>3</b><span>hackathon wins: Microsoft, Google AI, SAP AI</span></div>
+    <div><b>40+</b><span>certifications across AI, SAP and cloud</span></div>
   </div>
+  </div></div>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership">
+    <div class="sec-head">
+      <span class="eyebrow">Leadership</span>
+      <h2>How I lead AI transformation</h2>
+      <p>strategy, operating model, delivery and people</p>
+    </div>
+    <div class="lead-grid">
+      <div class="lead" style="--c:var(--cobalt)"><span class="ic">◎</span><h3>AI strategy that pays back</h3><p>Turn AI ambition into a sequenced roadmap and business case: which SAP Business AI and Joule capabilities to switch on, which agents to build, and what each returns. My AI Strategy Architect and Use Case Navigator are this method, productised.</p></div>
+      <div class="lead" style="--c:var(--violet)"><span class="ic">⬡</span><h3>Operating model &amp; AI CoE</h3><p>Stand up the way an organisation builds AI: intake and prioritisation, reusable agent patterns, an orchestration layer, and a clean-core rule so AI never breaks the ERP.</p></div>
+      <div class="lead" style="--c:var(--teal)"><span class="ic">⛨</span><h3>Responsible AI &amp; governance</h3><p>Human approval before any write-back, audit trails, PII masking, server-side key handling and evaluation against expert benchmarks before anything reaches a client.</p></div>
+      <div class="lead" style="--c:var(--coral)"><span class="ic">▲</span><h3>Delivery at scale</h3><p>Run S/4HANA Public Cloud programmes from fit-to-standard to go-live, and use agents to compress the slow parts: documentation, testing, defect triage and configuration.</p></div>
+      <div class="lead" style="--c:var(--sun)"><span class="ic">✦</span><h3>Talent &amp; enablement</h3><p>Train consultants, peers and juniors to build agents and use Joule, and take them from first prompt to working build so capability scales beyond one person.</p></div>
+      <div class="lead" style="--c:var(--magenta)"><span class="ic">◆</span><h3>CXO advisory &amp; growth</h3><p>Shape AI and SAP proposals, RFP responses and executive workshops, then prove the pitch with a working prototype instead of slides. Forward Deployed Engineer certified.</p></div>
+    </div>
+
+    <div class="record">
+      <h3>Leadership record</h3>
+      <ul>
+        <li><b>M&amp;A integration:</b> designed end-to-end integration processes for acquisitions including Vodafone, Idea and India Infoline.</li>
+        <li><b>Transformation at scale:</b> moved onboarding and recruiting from manual to digital for 10,000+ new hires across India.</li>
+        <li><b>Practice building:</b> built and led a SuccessFactors practice and its consulting team.</li>
+        <li><b>AI enablement:</b> trained peers and juniors on agent building, Joule skills and AI automation.</li>
+        <li><b>Thought leadership:</b> SAP Sapphire 2026 content on S/4HANA Cloud Public Edition; author of the <i>AI in Practice</i> newsletter.</li>
+        <li><b>External validation:</b> winner of Microsoft, Google AI and SAP AI hackathons; ISB Women in Leadership and Digital Transformation programmes.</li>
+      </ul>
+    </div>
+
+    <div class="playbook">
+      <h3>My AI transformation playbook</h3>
+      <ol>
+        <li><b>Discover</b><span>Map processes and data, find where value leaks</span></li>
+        <li><b>Prioritise</b><span>Score use cases on value, readiness, effort and licence</span></li>
+        <li><b>Build</b><span>Ship a working agent in weeks, not a deck</span></li>
+        <li><b>Govern</b><span>Guardrails, evals, human approval and audit</span></li>
+        <li><b>Scale</b><span>Reusable patterns, CoE and trained teams</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- AI ENGINEERING -->
+  <section id="engineering">
+    <div class="sec-head">
+      <span class="eyebrow">AI engineering</span>
+      <h2>AI engineering I work on</h2>
+      <p>hands-on, not just strategy</p>
+    </div>
+    <div class="eng">
+      <div style="--c:var(--cobalt)"><b>LLM applications</b>Apps on the Claude API with structured JSON outputs, streaming and schema validation between steps</div>
+      <div style="--c:var(--violet)"><b>Multi-agent orchestration</b>Pipelines of 6 to 12 specialist agents with hand-offs, an orchestrator, reflection and reasoning agents</div>
+      <div style="--c:var(--teal)"><b>RAG</b>Retrieval over vector stores and knowledge graphs, grounding answers in contracts, past fixes and domain rules</div>
+      <div style="--c:var(--coral)"><b>Tool use &amp; browser agents</b>Agents that call APIs and drive real screens, such as creating and activating forms in an ERP</div>
+      <div style="--c:var(--sun)"><b>Prompt &amp; context engineering</b>Role-based system prompts, few-shot patterns and context trimming to control token cost</div>
+      <div style="--c:var(--magenta)"><b>LLM evaluation</b>Scoring AI-generated documents against expert benchmarks; golden test sets for prompt changes</div>
+      <div style="--c:var(--leaf)"><b>Guardrails &amp; human-in-the-loop</b>Approval gates before write-back, audit trails, PII masking and server-side key handling</div>
+      <div style="--c:var(--sky)"><b>SAP Business AI</b>Joule and Joule agents, ISLM intelligent scenarios, BTP extensibility and clean core</div>
+    </div>
+  </section>
 
   <!-- FLAGSHIP -->
   <section id="flagship">
@@ -553,8 +769,8 @@ footer{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;
   <section id="toolkit">
     <div class="sec-head">
       <span class="eyebrow">More SAP builds</span>
-      <h2>More builds</h2>
-      <p>delivery tools, agents &amp; experiments</p>
+      <h2>Agent platforms</h2>
+      <p>orchestration, knowledge &amp; automation</p>
     </div>
     <div class="grid three">
 
@@ -675,8 +891,8 @@ footer{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;
   <section id="more">
     <div class="sec-head">
       <span class="eyebrow">More products</span>
-      <h2>More products</h2>
-      <p>AI apps I've designed &amp; shipped beyond SAP</p>
+      <h2>Social impact &amp; consumer AI</h2>
+      <p>AI products beyond SAP</p>
     </div>
     <div class="grid three">
 
@@ -876,16 +1092,131 @@ footer{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;
     </div>
   </section>
 
+  <!-- EDTECH -->
+  <section id="edtech">
+    <div class="sec-head"><span class="eyebrow">EdTech</span><h2>EdTech &amp; literacy</h2><p>learning apps I designed &amp; built</p></div>
+    <div class="grid three">
+
+      <article class="card">
+        <div class="shot" style="--a:#0F5132;--b:#198754">
+          <div class="win"><div class="bar"><em>Cheque Book Quiz · Financial literacy</em></div>
+            <div class="scr">
+              <div class="cheque">
+                <div class="row" style="justify-content:space-between"><span class="m">PAY · Q 7 of 30</span><span class="m">₹ 1,240</span></div>
+                <b>Which code identifies a bank branch for NEFT and RTGS?</b>
+                <div class="row" style="gap:5px"><span class="pill ok">IFSC</span><span class="pill wait">MICR</span><span class="pill wait">PAN</span><span class="pill wait">SWIFT</span></div>
+                <span class="stamp">CREDITED ✓</span>
+              </div>
+              <div class="row" style="justify-content:space-between"><span class="m">Streak ×2</span><span class="m">⏱ 18s left</span></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Financial Literacy Game</h3><p class="sub">Banking basics as a cheque-book game</p></div><span class="status s-live">Live</span></div>
+          <p class="body">30 questions on banks, cheques, MICR, IFSC, NEFT/RTGS, GST and insurance. Each answer stamps the cheque "credited" or "declined", with speed bonuses and streak multipliers.</p>
+          <div class="stack"><span>React</span><span>Gamification</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#3730A3;--b:#6366F1">
+          <div class="win"><div class="bar"><em>GrammarQuest · Class 7 English</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="pill" style="background:#EEF2FF;color:#3730A3">Tenses · Level 3</span><span class="m">🔥 5 streak · 340 XP</span></div>
+              <b>Choose the correct form: She ___ to school every day.</b>
+              <div class="cols" style="grid-template-columns:1fr 1fr;gap:5px"><span class="pill ok">goes</span><span class="pill wait">go</span><span class="pill wait">going</span><span class="pill wait">gone</span></div>
+              <div class="kpi" style="text-align:left"><span class="m">Rule: third-person singular takes -s in the simple present</span></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>GrammarQuest</h3><p class="sub">Gamified English grammar</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">90 questions across six topics. The rule and the common trap appear only after each answer, with XP, streaks, badges and levels.</p>
+          <div class="stack"><span>HTML · JS</span><span>90 questions</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#92400E;--b:#B45309">
+          <div class="win"><div class="bar"><em>SST Quest · CBSE Social Science</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="pill" style="background:#FEF3C7;color:#92400E">History · Ch 3</span><span class="m">Q 12 / 40</span></div>
+              <b>Who founded the Maratha kingdom in the 17th century?</b>
+              <div class="cols" style="grid-template-columns:1fr 1fr;gap:5px"><span class="pill ok">Shivaji</span><span class="pill wait">Baji Rao I</span><span class="pill wait">Shahu</span><span class="pill wait">Balaji Vishwanath</span></div>
+              <div class="prog" style="--a:#92400E;--b:#F59E0B"><i style="width:30%"></i></div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>SST Quest</h3><p class="sub">CBSE social science practice</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">History, geography and civics chapters as quiz quests, with an explanation after every answer and chapter-by-chapter progress.</p>
+          <div class="stack"><span>CBSE · NCERT</span><span>Quiz engine</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#065F46;--b:#0D9488">
+          <div class="win"><div class="bar"><em>Science Lab · Exploring Forces</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="pill" style="background:#D1FAE5;color:#065F46">Forces</span><span class="m">Score 8 / 10</span></div>
+              <b>Which force opposes the motion of a sliding box?</b>
+              <div class="cols" style="grid-template-columns:1fr 1fr;gap:5px"><span class="pill ok">Friction</span><span class="pill wait">Magnetic force</span><span class="pill wait">Gravity</span><span class="pill wait">Electrostatic</span></div>
+              <span class="m">✓ Friction acts between surfaces in contact</span>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Science Lab</h3><p class="sub">Class VIII science games</p></div><span class="status s-live">Live</span></div>
+          <p class="body">Chapter quizzes built from the school question bank, with instant feedback on every option.</p>
+          <a class="try" href="https://claude.ai/artifact/6gUrdMqVZCuEtsRyvCMGXn" target="_blank" rel="noopener">Open the app ↗</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#1E3A8A;--b:#2563EB">
+          <div class="win"><div class="bar"><em>Exam Prep · Microsoft AB-731</em></div>
+            <div class="scr">
+              <div class="row" style="justify-content:space-between"><span class="m">Full exam · Q 12 of 60</span><span class="pill run">⏱ 31:20</span></div>
+              <b>Which approach best grounds a copilot in company data?</b>
+              <div class="cols" style="grid-template-columns:1fr;gap:4px"><span class="pill ok">Retrieval over indexed company content</span><span class="pill wait">Fine-tune on every document</span></div>
+              <span class="pill" style="background:#1E3A8A;color:#fff;align-self:flex-start">✦ Explain with AI</span>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>Exam Prep Platforms</h3><p class="sub">Certification practice with AI tutors</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Timed exams, domain practice and AI explanations for every option: Microsoft AB-731 (150 questions), Claude Certified Architect (124), ABAP Cloud and UPSC.</p>
+          <div class="stack"><span>Claude API</span><span>Streaming</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="shot" style="--a:#831843;--b:#BE185D">
+          <div class="win"><div class="bar"><em>TPM Interview Simulator</em></div>
+            <div class="scr">
+              <div class="kpi" style="text-align:left"><b>Scenario 2 · Sprint planning</b><span class="m">The product owner wants three more stories than the team can deliver.</span></div>
+              <div class="row"><span class="pill" style="background:#BE185D;color:#fff">● Recording 0:42</span><span class="m">Answer by voice or text</span></div>
+              <div style="display:grid;grid-template-columns:auto 1fr;gap:4px 8px;align-items:center">
+                <span class="m">Clarity</span><div class="prog" style="--a:#831843;--b:#EC4899"><i style="width:82%"></i></div>
+                <span class="m">Trade-offs</span><div class="prog" style="--a:#831843;--b:#EC4899"><i style="width:70%"></i></div>
+              </div>
+            </div></div>
+        </div>
+        <div class="info">
+          <div class="card-top"><div><h3>TPM Interview Simulator</h3><p class="sub">Practise interviews, get scored</p></div><span class="status s-demo">Demo</span></div>
+          <p class="body">Scenario questions answered by voice, scored by AI against a rubric, with a scorecard and model answers.</p>
+          <div class="stack"><span>Speech input</span><span>AI scoring</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
   <!-- ALSO BUILT -->
   <section id="also">
-    <div class="sec-head"><span class="eyebrow">Also built</span><h2>Also built</h2><p>tools, simulators &amp; learning apps</p></div>
+    <div class="sec-head"><span class="eyebrow">Also built</span><h2>Also built</h2><p>tools and experiments</p></div>
     <div class="also">
       <div style="--c:var(--teal)"><b>S/4HANA Public Cloud Consultant Agent</b>Answers configuration and process questions</div>
       <div style="--c:var(--sun)"><b>SAP Test Data Generator</b>Realistic test data for S/4HANA scenarios</div>
-      <div style="--c:var(--violet)"><b>TPM Interview Simulator</b>Scenario questions, spoken answers and AI scoring against a rubric</div>
-      <div style="--c:var(--coral)"><b>Exam prep platforms</b>Practice banks for Microsoft AB-731 (150 questions), Claude Certified Architect (124), ABAP Cloud and UPSC</div>
+      <div style="--c:var(--violet)"><b>Financial Advisor Network</b>Six expert agents that split a salary into saving, investing and spending goals</div>
+      <div style="--c:var(--cobalt)"><b>Leave Credit Desk</b>HR agent that credits new joiners' leave from the leave policy and joining date</div>
+      <div style="--c:var(--leaf)"><b>Air Pollution Control Design Tool</b>Sizes scrubber equipment from process inputs</div>
       <div style="--c:var(--magenta)"><b>Future Tech Explorer</b>Interactive timeline of enterprise AI from 2025 to 2050</div>
-      <div style="--c:var(--leaf)"><b>Science Lab learning games</b>Class VIII quizzes with instant feedback · <a href="https://claude.ai/artifact/6gUrdMqVZCuEtsRyvCMGXn" target="_blank" rel="noopener">Exploring Forces ↗</a> · <a href="https://claude.ai/artifact/UxV6V5XvYQvijaN22RbALu" target="_blank" rel="noopener">Invisible Living World ↗</a></div>
     </div>
   </section>
 
@@ -893,14 +1224,14 @@ footer{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;
   <section id="writing">
     <div class="sec-head"><span class="eyebrow">Writing</span><h2>Writing</h2><p>AI in Practice · fortnightly on LinkedIn</p></div>
     <div class="grid">
-      <a class="post" href="https://linkedin.com/in/neeti-8454417b" target="_blank" rel="noopener">
-        <div class="cover" style="background:linear-gradient(135deg,#1E1B4B,#7C3AED 55%,#F472B6)"><span>AI in Practice · 13 Oct 2026</span><b>When Light Does The Computing</b><span>Read on LinkedIn ↗</span></div>
+      <div class="post">
+        <div class="cover" style="background:linear-gradient(135deg,#1E1B4B,#7C3AED 55%,#F472B6)"><span>AI in Practice · 13 Oct 2026</span><b>When Light Does The Computing</b><span>AI in Practice · LinkedIn</span></div>
         <div class="txt"><h3>When Light Does The Computing</h3><p>An optical neural network breakthrough, and what it could mean for the cost of running AI.</p></div>
-      </a>
-      <a class="post" href="https://linkedin.com/in/neeti-8454417b" target="_blank" rel="noopener">
-        <div class="cover"><span>AI in Practice · Edition 1 · Sept 2026</span><b>The Next AI Advantage Is Business Expertise</b><span>Read on LinkedIn ↗</span></div>
+      </div>
+      <div class="post">
+        <div class="cover"><span>AI in Practice · Edition 1 · Sept 2026</span><b>The Next AI Advantage Is Business Expertise</b><span>AI in Practice · LinkedIn</span></div>
         <div class="txt"><h3>The Next AI Advantage Is Business Expertise</h3><p>Why people who know the process will get more out of AI than people who only know the model.</p></div>
-      </a>
+      </div>
     </div>
   </section>
 
@@ -917,6 +1248,8 @@ footer{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;
             <li>Lead SAP S/4HANA Public Cloud implementations for finance, procurement and sales.</li>
             <li>Drive generative and agentic AI inside SAP programs; certified Forward Deployed Engineer.</li>
             <li>Built SAP Sapphire 2026 content on S/4HANA Cloud Public Edition.</li>
+            <li>Trained peers and juniors on agent building, Joule skills and AI automation.</li>
+            <li>Shaped proposals and RFP responses for large AI, SAP and managed-services bids.</li>
           </ul>
         </div>
       </div>
@@ -989,8 +1322,8 @@ footer{font-family:var(--f-mono);font-size:12px;color:var(--muted);display:flex;
   </section>
 
   <section class="cta" id="contact">
-    <h2>Let's build the autonomous enterprise.</h2>
-    <p>Bring me an SAP AI roadmap that needs to ship, a process that should run itself, or a team that needs to learn agentic delivery.</p>
+    <h2>Let's lead the AI-first enterprise.</h2>
+    <p>Bring me an AI or SAP Business AI programme that needs a leader who can set the strategy, build the operating model and still ship the agents.</p>
     <div class="row">
       <span class="addr">neeti4mathur@gmail.com</span>
       <button class="copy" type="button" data-copy="neeti4mathur@gmail.com" id="copy-2">Copy email</button>
